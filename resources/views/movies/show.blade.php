@@ -12,21 +12,17 @@
             <th scope="col">genre</th>
             <th scope="col">author</th>
             <th scope="col">descriptions</th>
-            <th scope="col">info</th>
           </tr>
         </thead>
         <tbody>
-            @foreach ($film as $item)
             <tr>
-                <th scope="row">{{ $item-> id }}</th>
-                <td>{{ $item-> title }}</td>
-                <td>{{ $item-> genre }}</td>
-                <td>{{ $item-> regista }}</td>
-                <td>{{ $item-> description }}</td>
+                <th scope="row">{{ $movie-> id }}</th>
+                <td>{{ $movie-> title }}</td>
+                <td>{{ $movie-> genre }}</td>
+                <td>{{ $movie-> regista }}</td>
+                <td>{{ $movie-> description }}</td>
                 {{-- lo vedo nel terminale route list --}}
-                <td><a href=" {{ route('movies.show', ['movie'=> $item-> id]) }} ">dettagli</a></td>
               </tr>
-            @endforeach
           
         </tbody>
       </table>
