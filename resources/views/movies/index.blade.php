@@ -12,16 +12,21 @@
             <th scope="col">genre</th>
             <th scope="col">author</th>
             <th scope="col">descriptions</th>
+            <th scope="col">info</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Otto</td>
-          </tr>
+            @foreach ($film as $item)
+            <tr>
+                <th scope="row">{{ $item-> id }}</th>
+                <td>{{ $item-> title }}</td>
+                <td>{{ $item-> genre }}</td>
+                <td>{{ $item-> regista }}</td>
+                <td>{{ $item-> description }}</td>
+                <td><a href="">dettagli</a></td>
+              </tr>
+            @endforeach
+          
         </tbody>
       </table>
 @endsection
