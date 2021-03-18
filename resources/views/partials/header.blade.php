@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav d-flex justify-content-center w-100">
               <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
               <a class="nav-link" href=" {{ route('movies.index') }} ">Movies</a>
             </div>
