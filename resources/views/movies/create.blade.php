@@ -5,7 +5,9 @@
 @section('content')
    <h3>Film da inserire:</h3>
 
-   <form>
+   {{-- per inviare i dati --}}
+   <form method="POST" action="{{ route('movies.store') }}">
+    @csrf
     <div class="form-group">
       <label for="exampleInputEmail1">Titolo</label>
       <input type="text" class="form-control" id="exampleInputEmail1" name="title">
@@ -22,6 +24,6 @@
       <label for="exampleFormControlTextarea1">Descrizione</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Aggiungi</button>
   </form>
 @endsection

@@ -39,9 +39,21 @@ class MovieController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
+
+    //  per inviare i dati
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+       
+        $newFilm = new Movie();
+        $newFilm->title = $data['title'];
+        $newFilm->genre = $data['genre'];
+        $newFilm->author = $data['author'];
+        $newFilm->description = $data['description'];
+
+        $newFilm->save();
     }
 
     /**
