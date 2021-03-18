@@ -4,5 +4,5 @@
 @section('title', 'home movies')
     
 @section('content')
-     <h3>Per visualizzare la lista dei film premere su movies</h3>
+     <h3>Per visualizzare e inserire film premere su movies</h3>
 @endsection

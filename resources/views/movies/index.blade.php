@@ -4,6 +4,7 @@
     
 @section('content')
     <h2>Elenco film:</h2>
+    <a href=" {{ route('movies.create') }} ">Inserisci film:</a>
     <table class="table">
         <thead>
           <tr>
