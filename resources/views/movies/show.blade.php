@@ -16,12 +16,12 @@
         </thead>
         <tbody>
             <tr>
+              {{-- lo vedo nel terminale route list --}}
                 <th scope="row">{{ $movie-> id }}</th>
                 <td>{{ $movie-> title }}</td>
                 <td>{{ $movie-> genre }}</td>
                 <td>{{ $movie-> regista }}</td>
                 <td>{{ $movie-> description }}</td>
-                {{-- lo vedo nel terminale route list --}}
               </tr>
           
         </tbody>
