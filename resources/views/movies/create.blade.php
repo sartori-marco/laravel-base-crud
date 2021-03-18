@@ -19,8 +19,8 @@
       <input type="text" class="form-control" id="exampleInputEmail1" name="author">
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Descrizione</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" name="description">
+      <label for="exampleFormControlTextarea1">Descrizione</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
