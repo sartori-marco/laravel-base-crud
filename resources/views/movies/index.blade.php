@@ -27,6 +27,13 @@
                 {{-- lo vedo nel terminale route list --}}
                 <td><a href=" {{ route('movies.show', ['movie'=> $item-> id]) }} ">dettagli</a></td>
                 <td><a href=" {{ route('movies.edit', ['movie'=> $item-> id]) }} " class="btn btn-primary">modifica</a></td>
+                <td>
+                  <form action="{{route('movies.destroy', $item-> id)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger">elimina</button>
+                  </form>
+                </td>
               </tr>
             @endforeach
           
