@@ -104,6 +104,7 @@ class MovieController extends Controller
     public function update(Request $request, Movie $movie)
     {
         $data = $request->all();
+        // dd($data);
 
         // ERRORE
         $movie->update($data);

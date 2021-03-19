@@ -22,7 +22,7 @@
                 <th scope="row">{{ $item-> id }}</th>
                 <td>{{ $item-> title }}</td>
                 <td>{{ $item-> genre }}</td>
-                <td>{{ $item-> regista }}</td>
+                <td>{{ $item-> author }}</td>
                 <td>{{ $item-> description }}</td>
                 {{-- lo vedo nel terminale route list --}}
                 <td><a href=" {{ route('movies.show', ['movie'=> $item-> id]) }} ">dettagli</a></td>

@@ -6,7 +6,7 @@
    <h3>Film da modificare:</h3>
 
    {{-- per modificare i dati --}}
-   <form method="post" action="{{ route('movies.update', $movie->id)}}">
+   <form method="post" action="{{ route('movies.update', $movie->id) }}">
     @method('PUT')
     @csrf
     <div class="form-group">
@@ -19,7 +19,7 @@
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Autore</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" name="author"  value="{{ $movie->regista }}">
+      <input type="text" class="form-control" id="exampleInputEmail1" name="author"  value="{{ $movie->author }}">
     </div>
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Descrizione</label>

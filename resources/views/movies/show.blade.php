@@ -20,7 +20,7 @@
                 <th scope="row">{{ $movie-> id }}</th>
                 <td>{{ $movie-> title }}</td>
                 <td>{{ $movie-> genre }}</td>
-                <td>{{ $movie-> regista }}</td>
+                <td>{{ $movie-> author }}</td>
                 <td>{{ $movie-> description }}</td>
               </tr>
           
