@@ -13,7 +13,7 @@
       <input type="text" class="form-control" id="exampleInputEmail1" name="title">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label for="exampleInputPassword1">Genere</label>
       <input type="text" class="form-control" id="exampleInputEmail1" name="genre">
     </div>
     <div class="form-group">

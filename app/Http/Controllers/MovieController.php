@@ -57,6 +57,8 @@ class MovieController extends Controller
         $newFilm->save();
         $newFilm->delete();
         dd($newFilm);
+
+        return redirect()->route('movies.show', $newFilm->find($newFilm->id));
     }
 
     /**
