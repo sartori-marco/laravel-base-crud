@@ -26,6 +26,7 @@
                 <td>{{ $item-> description }}</td>
                 {{-- lo vedo nel terminale route list --}}
                 <td><a href=" {{ route('movies.show', ['movie'=> $item-> id]) }} ">dettagli</a></td>
+                <td><a href=" {{ route('movies.edit', ['movie'=> $item-> id]) }} " class="btn btn-primary">modifica</a></td>
               </tr>
             @endforeach
           
